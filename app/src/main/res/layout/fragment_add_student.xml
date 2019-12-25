@@ -45,19 +45,19 @@
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/etMale"
+
             android:text="Male"/>
 
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/etFemale"
+
             android:text="Female"/>
 
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/etOther"
+
             android:text="Other"/>
 
     </RadioGroup>

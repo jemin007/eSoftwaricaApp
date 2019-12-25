@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import com.example.thirdassignment_softwaricaapp.R;
 
@@ -19,9 +20,10 @@ import com.example.thirdassignment_softwaricaapp.R;
  */
 public class AddStudent extends Fragment {
 
-    EditText etName, etAge, etAddress;
-    RadioButton etMale, etFemale, etOther;
-    Button btnRegister;
+    private EditText etName, etAge, etAddress;
+    private RadioButton radioButton;
+    private Button btnRegister;
+    private RadioGroup radioGroup;
 
     public AddStudent() {
         // Required empty public constructor
@@ -32,10 +34,12 @@ public class AddStudent extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_add_student, container, false);
+        etName = view.findViewById(R.id.etName);
 
 
 
-        return inflater.inflate(R.layout.fragment_add_student, container, false);
+
     }
 
 }
