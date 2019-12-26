@@ -21,15 +21,8 @@ public class Dashboard extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //---DEFAULT
         setContentView(R.layout.activity_dashboard);
 
-        //---First try on loading frag___
-//        FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
-//        tx.replace(R.id.frag_container, new ShowStudent());
-//        tx.commit();
-
-        //---Second try on loading frag___
 
 
         fragmentManager = getSupportFragmentManager();
