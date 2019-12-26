@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp"
     android:layout_height="match_parent"
-    tools:context=".Fragments.AddStudent">
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="15dp"
+    tools:context=".EditStudent">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Student Details"
+        android:text="Edit Student Details"
         android:textSize="30sp"
         android:layout_gravity="center"
         />
@@ -19,12 +22,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Full Name"
-        android:id="@+id/etName"
+        android:id="@+id/editName"
         android:layout_marginTop="8sp"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etAge"
+        android:id="@+id/editAge"
         android:hint="Age"
         android:inputType="number"
         android:layout_marginTop="10sp"
@@ -39,26 +42,26 @@
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/RadioGroup"
+        android:id="@+id/editRadioGroup"
         android:layout_marginTop="20sp"
         android:weightSum="1">
 
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rdMale"
+            android:id="@+id/editMale"
             android:text="Male"/>
 
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rdFemale"
+            android:id="@+id/editFemale"
             android:text="Female"/>
 
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/rdOther"
+            android:id="@+id/editOther"
             android:text="Other"/>
 
     </RadioGroup>
@@ -66,7 +69,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/etAddress"
+        android:id="@+id/editAddress"
         android:hint="Address"
         android:layout_marginTop="20sp"
         />
@@ -74,12 +77,11 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register"
+        android:text="Save"
         android:layout_marginTop="15sp"
         android:textSize="20sp"
-        android:id="@+id/btnRegister"
+        android:id="@+id/btnSave"
         android:textColor="#FFFFFF"
         android:background="@drawable/round_button"/>
-
 
 </LinearLayout>

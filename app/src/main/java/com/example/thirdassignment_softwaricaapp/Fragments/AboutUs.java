@@ -37,7 +37,7 @@ public class AboutUs extends Fragment {
         webView.getSettings().setJavaScriptEnabled(true);
         webView.getSettings().setAppCacheEnabled(true);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://www.google.com/");
+        webView.loadUrl("https://softwarica.edu.np/");
         return view;
     }
 

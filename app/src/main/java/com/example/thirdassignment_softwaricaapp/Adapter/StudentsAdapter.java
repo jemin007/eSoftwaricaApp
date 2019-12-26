@@ -1,6 +1,7 @@
 package com.example.thirdassignment_softwaricaapp.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.thirdassignment_softwaricaapp.EditStudent;
 import com.example.thirdassignment_softwaricaapp.R;
 
 import java.util.List;
@@ -72,7 +74,11 @@ public class StudentsAdapter extends RecyclerView.Adapter<StudentsAdapter.Studen
         holder.imgEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Students edtStudents = studentsList.get(position);
+                int index = studentsList.indexOf(edtStudents);
+                EditStudent.index = index;
+                Intent intent = new Intent(context, EditStudent.class);
+                context.startActivity(intent);
             }
         });
     }
