@@ -40,7 +40,7 @@ public class AddStudent extends Fragment {
         etAddress = view.findViewById(R.id.etAddress);
         btnRegister = view.findViewById(R.id.btnRegister);
 
-
+        return (view);
     }
 
 }

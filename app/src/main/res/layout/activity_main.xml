@@ -10,11 +10,15 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:layout_width="350dp"
+        android:layout_width="300dp"
         android:layout_height="150dp"
         android:src="@drawable/softwarica"
         android:layout_gravity="center"/>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
     <EditText
         android:layout_width="350dp"
         android:layout_height="wrap_content"
@@ -22,7 +26,12 @@
         android:textSize="25sp"
         android:layout_margin="15dp"
         android:hint="Username"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
     <EditText
         android:layout_width="350dp"
         android:layout_height="wrap_content"
@@ -30,9 +39,11 @@
         android:textSize="25sp"
         android:layout_margin="10dp"
         android:hint="Password"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:layout_width="350dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/round_button"
         android:text="Login"
         android:textSize="20sp"
