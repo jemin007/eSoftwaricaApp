@@ -15,6 +15,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.example.thirdassignment_softwaricaapp.Adapter.Students;
 import com.example.thirdassignment_softwaricaapp.Dashboard;
 import com.example.thirdassignment_softwaricaapp.R;
 
@@ -23,9 +24,9 @@ import com.example.thirdassignment_softwaricaapp.R;
  */
 public class AddStudent extends Fragment implements RadioGroup.OnCheckedChangeListener {
 
-    private EditText etName, etAge, etAddress;
-    private Button btnRegister;
-    private RadioGroup rGroup;
+     EditText etName, etAge, etAddress;
+     Button btnRegister;
+     RadioGroup rGroup;
     int age;
     String name,address,gender = "Male";
 
@@ -53,7 +54,7 @@ public class AddStudent extends Fragment implements RadioGroup.OnCheckedChangeLi
                     name = etName.getText().toString();
                     address = etAddress.getText().toString();
                     age = Integer.parseInt(etAge.getText().toString());
-                    Dashboard.studentList.add(new Students(name,gender,age,address));
+                    Dashboard.studentsList.add(new Students(name,gender,address,age));
                     Toast.makeText(getContext(), "Student has been added succesfully!", Toast.LENGTH_SHORT).show();
                 }
             }
