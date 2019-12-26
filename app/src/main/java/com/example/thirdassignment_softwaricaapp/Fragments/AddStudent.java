@@ -36,8 +36,9 @@ public class AddStudent extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_add_student, container, false);
         etName = view.findViewById(R.id.etName);
-
-
+        etAge = view.findViewById(R.id.etAge);
+        etAddress = view.findViewById(R.id.etAddress);
+        btnRegister = view.findViewById(R.id.btnRegister);
 
 
     }
